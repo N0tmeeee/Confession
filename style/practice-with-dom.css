@@ -1,0 +1,16 @@
+body{
+    background: url(../photo/deer-rain-maker-6y-2560x1440.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat ;
+}
+#group-text{
+    background-color: transparent;
+    backdrop-filter: blur(7px);
+    border: 3px solid gold;
+    border-radius: 30px;
+    height: 80vh;
+}
+button{
+    border-radius: 10px;
+}
