@@ -3,6 +3,7 @@ const noBtn = document.getElementById("noBtn");
 const image = document.getElementById("image");
 const textShow = document.getElementById("textShow");
 let count = 0;
+
 yesBtn.addEventListener("click", () => {
   count = 0;
   textShow.innerHTML = "Yeaaaaaaaaaaaa!!!!!!!";
@@ -12,21 +13,24 @@ yesBtn.addEventListener("click", () => {
     noBtn.style.left = "0px";
     noBtn.style.top = "0px";
   }
+  yesBtn.innerHTML = "";
+  yesBtn.style.background = "none";
 });
 noBtn.addEventListener("click", () => {
+  let random = Math.random() * 70;
   count++;
   textShow.innerHTML = "Think again , are you sure?🥹";
   image.src =
     "https://gifdb.com/images/thumbnail/cat-sad-sticker-xhycjhca1i4g7ok4.gif";
   if (count === 1) {
     noBtn.style.position = "relative";
-    noBtn.style.left = "100px";
-    noBtn.style.top = "50px";
+    noBtn.style.left = -random * 10 + "px";
+    noBtn.style.top = random * 5 + "px";
   }
   if (count === 2) {
     noBtn.style.position = "relative";
-    noBtn.style.left = "-400px";
-    noBtn.style.top = "-200px";
+    noBtn.style.left = random * 7 + "px";
+    noBtn.style.top = -random * 3 + "px";
   }
   if (count === 3) {
     noBtn.innerHTML = "";

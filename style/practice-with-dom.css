@@ -1,8 +1,14 @@
+.no-scroll {
+  overflow: hidden;
+  /* Optional: Prevents layout shift if a scrollbar disappears */
+  height: 100vh; 
+}
 body{
     background: url(../photo/deer-rain-maker-6y-2560x1440.jpg);
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat ;
+    
 }
 #group-text{
     background-color: transparent;
